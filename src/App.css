@@ -1,0 +1,28 @@
+html {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #000;
+  color: #919799;
+  font-family: "Titillium Web", "Tahoma";
+}
+
+.navclass {
+  z-index: 5;
+}
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-right p {
+  animation: slide-right 5s forwards;
+  transform: translateX(100%);
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(-100%);
+  }
+}
